@@ -5,7 +5,7 @@ Shark Jack payloads for testing exposed RJ45 (ethernet) ports and dealing with p
 Idea: Walk around or have someone else walk around and plug into different ports to figure out which networks are reachable from where (network segmentation).
 
 - get-mac.sh ⇒ get MAC address of device (plug into device)  
-Idea: NAC whitelists based on device MAC address. Plug into a legit device (eg. phone) and grab its MAC address so you can spoof it.
+Idea: NAC whitelists based on device MAC address. Plug into a legit device (eg. phone) and grab its MAC address so you can spoof it. Also consider using Packet Squirrel or Plunder Bug instead.
 - spoof-mac.sh ⇒ spoof MAC address of device (plug into network)  
 Idea: Add to other scripts to change Shark Jack's MAC address and get around port security.
 
