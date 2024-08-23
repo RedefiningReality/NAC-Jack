@@ -47,7 +47,7 @@ Idea: Add to other scripts to change Shark Jack's MAC address and get around por
 ### hunt-subnet-c2.sh
 *look for critical subnet, and if found, change colour and connect to cloud C2*
 
-Idea: You want access to a network that isn't the "guest" network. Walk around or have someone else walk around and plug into different ports. When a "non-guest" network is observed, the colour will be different. Leave the Shark Jack there and remote into it via SSH over Hak5 Cloud C2 for further testing.
+Idea: You want access to a network that isn't the "guest" network. Walk around or have someone else walk around and plug into different ports. When a "non-guest" network is observed, the colour will be different (white). Leave the Shark Jack there and remote into it via SSH over Hak5 Cloud C2 for further testing.
 #### Colours
 - Magenta ⇒ waiting for network - if you plug it in and it stays magenta for 5+ seconds, the port is probably dead
 - Red ⇒ waiting to obtain IP from DHCP - if you plug it in and it stays red for 5+ seconds, either DHCP is not being served or there's port security in place
