@@ -3,8 +3,7 @@ Shark Jack payloads for testing exposed RJ45 (ethernet) ports and dealing with p
 
 - rerun.sh ⇒ add to the end of other scripts to rerun payload on network change without rebooting Shark Jack  
 Idea: Once a payload is run, it needs to be manually rerun or the Shark Jack needs to be rebooted to run it again. The Shark Jack takes a while to boot.
-These lines at the end of other scripts cause the Shark Jack to wait until it's plugged into a new port then automatically rerun the payload.
-Simply walk around with the Shark Jack and plug it into RJ45 ports without having to wait for it to reboot.
+These lines at the end of a script cause the Shark Jack to wait until it's plugged into a new port then automatically rerun the payload.
 
 - get-subnet.sh ⇒ plug Shark Jack in and save subnet with timestamp to file  
 Idea: Walk around or have someone else walk around and plug into different ports to figure out which networks are reachable from where (network segmentation).
