@@ -1,7 +1,7 @@
 # NAC-Jack
 Shark Jack payloads for testing exposed RJ45 (ethernet) ports and dealing with port security.
 
-- rerun.sh ⇒ add to the end of other scripts to rerun payload on network change without rebooting Shark Jack
+- rerun.sh ⇒ add to the end of other scripts to rerun payload on network change without rebooting Shark Jack  
 Idea: Once a payload is run, it needs to be manually rerun or the Shark Jack needs to be rebooted to run it again. The Shark Jack takes a while to boot.
 These lines at the end of other scripts cause the Shark Jack to wait until it's plugged into a new port then automatically rerun the payload.
 Simply walk around with the Shark Jack and plug it into RJ45 ports without having to wait for it to reboot.
