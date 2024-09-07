@@ -73,7 +73,7 @@ Idea: Add to other scripts to change Shark Jack's MAC address and get around por
 - Green ⇒ finished
 
 ### scan.sh
-*basic nmap scans - exfiltrate results to Cloud C2*
+*basic nmap scans - exfiltrate results to cloud C2*
 #### Variables
 - `LOOT_DIR` → directory to store scan results
 - `<scan type>_SCAN` → nmap scan flags
