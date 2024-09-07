@@ -1,6 +1,14 @@
 # NAC-Jack
 Shark Jack payloads for testing exposed RJ45 (ethernet) ports and dealing with port security.
 
+### Overview
+- rerun.sh → add to the end of other scripts to rerun payload on network change without rebooting Shark Jack
+- get-subnet.sh → plug Shark Jack into port and save subnet to file
+- get-mac.sh → get MAC address of device (plug into device)
+- spoof-mac.sh → spoof MAC address of device (plug into network)
+- scan.sh → basic nmap scans
+- hunt-subnet-c2.sh → look for critical subnet, and if found, change colour and connect to cloud C2 for remote access
+
 ## Fixing colour issues in Shark Jack cable
 Full credit to [this forum post](https://forums.hak5.org/topic/58286-shark-jack-cable-led-bug/)  
 Change the following lines at the bottom of `/usr/bin/LED`:
@@ -14,6 +22,8 @@ if pgrep -f DO_A_BARREL_ROLL | grep -qvE "$$|${PPID}"; then
     ps | grep LED | grep -v grep | awk '{print $1}' | grep -v $$ | xargs kill -9
 fi
 ```
+
+## Payload Details
 
 ### rerun.sh
 *add to the end of other scripts to rerun payload on network change without rebooting Shark Jack*
